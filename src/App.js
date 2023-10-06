@@ -24,7 +24,7 @@ function App() {
     } else {
       try {
         setLoading(true);
-        const response = await axios.post(`http://172.30.175.81:8082/buscarclima?region=${region}`);
+        const response = await axios.post(`https://172.30.175.81:8082/buscarclima?region=${region}`);
         console.log('Respuesta del servidor:', response.data);
         setInfoClima(response.data);
         setLoading(false);
