@@ -62,7 +62,7 @@ function App() {
       </div>
 
       <>
-        {loading == true ? (
+        {loading === true ? (
           <div className="spinner-border text-light container" role="status">
             <span className="sr-only">Loading...</span>
           </div>
