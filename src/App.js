@@ -24,7 +24,7 @@ function App() {
     } else {
       try {
         setLoading(true);
-        const response = await axios.post(`backend-java-clima-git.hector-buet-dev.svc.cluster.local/buscarclima?region=${region}`);
+        const response = await axios.post(`backend-java-clima-git.hector-buet-dev.svc.cluster.local:8082/buscarclima?region=${region}`);
         console.log('Respuesta del servidor:', response.data);
         setInfoClima(response.data);
         setLoading(false);
